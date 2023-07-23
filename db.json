@@ -17,6 +17,24 @@
       "username": "Juan Carlos",
       "email": "juancarlos@gmail.com",
       "password": 14509
+    },
+    {
+      "username": "NarutoUzumaki",
+      "email": "aaa@gmail.com",
+      "password": "12875",
+      "id": 3
+    },
+    {
+      "username": "NarutoUzumaki",
+      "email": "aaa@gmail.com",
+      "password": "12875",
+      "id": 4
+    },
+    {
+      "username": "SakuraHaruno",
+      "email": "sakura@gmail.com",
+      "password": "12445",
+      "id": 5
     }
   ]
 }

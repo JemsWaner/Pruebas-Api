@@ -8,17 +8,33 @@
   </head>
   <body>
     <form id="datas">
-      <input type="text" name="user" placeholder="username" />
+      <label for="user">Username</label>
+      <input
+        type="text"
+        name="user"
+        placeholder="username"
+        minlength="2"
+        id="user"
+      />
+      <label for="email">Email</label>
       <input
         type="text"
         inputmode="email"
         name="gmail"
         placeholder="jesus@gmail.com"
         required
+        id="email"
       />
-      <input type="password" name="passwords" placeholder="12345" />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="passwords"
+        placeholder="12345"
+        id="password"
+      />
       <button type="submit">Submit</button>
     </form>
+    <button class="reset">Delete</button>
     <table>
       <thead>
         <tr>
@@ -30,5 +46,6 @@
       <tbody></tbody>
     </table>
     <script src="api.js"></script>
+    <footer>JemsWaner ©2023- All rights reserved</footer>
   </body>
 </html>

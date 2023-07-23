@@ -1,5 +1,6 @@
 const form = document.querySelector("form");
 const tableBody = document.querySelector("tbody");
+const resetButton = document.querySelector(".reset");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -19,9 +20,27 @@ form.addEventListener("submit", (e) => {
     }),
   }).then((a) => {
     console.log(a);
-    TableValues();
+    LastValue();
   });
 });
+
+function LastValue() {
+  fetch("http://localhost:3000/user", {
+    method: "GET",
+  })
+    .then((data) => data.json())
+    .then((e) => {
+      let lastArray = e[e.length - 1];
+      console.log(lastArray);
+      ///Now I create new rows to show the users I saved in my json
+      const rows = document.createElement("tr");
+      rows.innerHTML = `<td>${lastArray.username}</td> <td>${lastArray.email}</td> <td>${lastArray.password}</td>`;
+      tableBody.appendChild(rows);
+    })
+    .catch((err) => {
+      throw new Error(err);
+    });
+}
 
 //////Now I use fetch mith the method Get to acces to the list created previously
 
@@ -43,4 +62,23 @@ function TableValues() {
       throw new Error(err);
     });
 }
-// TableValues();
+TableValues();
+
+//////Deleting last element one by one by clicking the button event
+function DeleteLastValue() {
+  fetch("http://localhost:3000/user")
+    .then((data) => data.json())
+    .then((e) => {
+      let lastArray = e[e.length - 1];
+      console.log(lastArray);
+      return lastArray;
+    })
+    .then((a) => {
+      fetch(`http://localhost:3000/user/${a}`, {
+        method: "DELETE",
+      });
+    });
+}
+
+//////Deleting last users of the table
+resetButton.addEventListener("click", DeleteLastValue());

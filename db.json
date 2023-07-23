@@ -1,40 +1,22 @@
 {
   "user": [
     {
-      "id": 0,
-      "username": "Anna",
-      "email": "annamaria@gmail.com",
-      "password": 12345
-    },
-    {
-      "id": 1,
-      "username": "Anna Maria",
-      "email": "annamaria@gmail.com",
-      "password": 230298
-    },
-    {
-      "id": 2,
-      "username": "Juan Carlos",
-      "email": "juancarlos@gmail.com",
-      "password": 14509
+      "username": "NarutoUzumaki",
+      "email": "jesus@gmail.com",
+      "password": "123344",
+      "id": 1
     },
     {
       "username": "NarutoUzumaki",
-      "email": "aaa@gmail.com",
-      "password": "12875",
-      "id": 3
-    },
-    {
-      "username": "NarutoUzumaki",
-      "email": "aaa@gmail.com",
-      "password": "12875",
-      "id": 4
-    },
-    {
-      "username": "SakuraHaruno",
       "email": "sakura@gmail.com",
-      "password": "12445",
-      "id": 5
+      "password": "1224344",
+      "id": 2
+    },
+    {
+      "username": "",
+      "email": "waner@gmail.com",
+      "password": "",
+      "id": 3
     }
   ]
 }

@@ -2,27 +2,73 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
 }
-form {
+
+body {
+  background-image: linear-gradient(to left, rgb(203, 108, 108), rgb(64, 64, 138));
   padding: 20px;
 }
 
-input {
+form {
+  margin-bottom: 20px;
+}
+form label {
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: coral;
+}
+form input {
   display: block;
+  margin-top: 5px;
   margin-bottom: 10px;
+  color: black;
+}
+form input:focus {
+  outline-color: red;
+  outline-style: outset;
+  outline-width: 3px;
+}
+
+button {
+  background-color: rgb(48, 122, 122);
+  font-size: 16px;
+  padding: 6px;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: rgb(39, 104, 104);
+  cursor: pointer;
 }
 
 table {
   border: solid 3px black;
   width: 70%;
+  border-color: white;
 }
-th {
+table th {
   padding-right: 20px;
   border: solid 1px black;
+  background-color: rgb(64, 163, 163);
 }
-td {
+table th:hover {
+  cursor: pointer;
+  background-color: rgb(48, 134, 134);
+}
+table td {
   padding: 6px;
   border: solid 1px black;
+  background-color: rgb(137, 162, 174);
 }
+table td:hover {
+  cursor: pointer;
+  background-color: rgb(113, 140, 152);
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}/*# sourceMappingURL=api.css.map */

@@ -70,15 +70,16 @@ function DeleteLastValue() {
     .then((data) => data.json())
     .then((e) => {
       let lastArray = e[e.length - 1];
-      console.log(lastArray);
-      return lastArray;
-    })
-    .then((a) => {
-      fetch(`http://localhost:3000/user/${a}`, {
+      fetch(`http://localhost:3000/user/${lastArray.id}`, {
         method: "DELETE",
+      }).then((del) => {
+        tableBody.removeChild(tableBody.lastElementChild);
       });
+    })
+    .catch((err) => {
+      throw new Error(err);
     });
 }
 
 //////Deleting last users of the table
-resetButton.addEventListener("click", DeleteLastValue());
+resetButton.addEventListener("click", DeleteLastValue);

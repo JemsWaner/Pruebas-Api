@@ -1,22 +1,3 @@
 {
-  "user": [
-    {
-      "username": "NarutoUzumaki",
-      "email": "jesus@gmail.com",
-      "password": "123344",
-      "id": 1
-    },
-    {
-      "username": "NarutoUzumaki",
-      "email": "sakura@gmail.com",
-      "password": "1224344",
-      "id": 2
-    },
-    {
-      "username": "",
-      "email": "waner@gmail.com",
-      "password": "",
-      "id": 3
-    }
-  ]
+  "user": []
 }
